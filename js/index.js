@@ -7,16 +7,27 @@ const cellSix = document.querySelector('.c6')
 const cellSeven = document.querySelector('.c7')
 const cellEight = document.querySelector('.c8')
 const cellNine = document.querySelector('.c9')
+let count = 0
 
 cellOne.addEventListener('click', takeCell)
+cellTwo.addEventListener('click', takeCell)
+cellThree.addEventListener('click', takeCell)
+cellFour.addEventListener('click', takeCell)
+cellFive.addEventListener('click', takeCell)
+cellSix.addEventListener('click', takeCell)
+cellSeven.addEventListener('click', takeCell)
+cellEight.addEventListener('click', takeCell)
+cellNine.addEventListener('click', takeCell)
 
 function takeCell() {
-    cell.style.background = 'red'
+    count ++
+    if(isEven(count)) {
+        cellOne.style.background = 'red'
+    } else {
+        cellOne.style.background = 'blue'
+    }
 }
 
-function isEven(){
-    let count = 0
-    if( //something happens, add 1 ) {
-        return count % 2 === 0
-    }
+function isEven(n){
+    return n % 2 === 0
 }
