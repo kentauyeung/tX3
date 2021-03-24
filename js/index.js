@@ -7,64 +7,81 @@ const cellSix = document.querySelector('.c6')
 const cellSeven = document.querySelector('.c7')
 const cellEight = document.querySelector('.c8')
 const cellNine = document.querySelector('.c9')
-let startArr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-let playingArr = []
+let startCells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let cellsRemain = []
 
 cellOne.addEventListener('click', takeCellOne)
-// cellTwo.addEventListener('click', takeCellTwo)
-// cellThree.addEventListener('click', takeCellThree)
-// cellFour.addEventListener('click', takeCellFour)
-// cellFive.addEventListener('click', takeCellFive)
-// cellSix.addEventListener('click', takeCellSix)
-// cellSeven.addEventListener('click', takeCellSeven)
-// cellEight.addEventListener('click', takeCellEight)
-// cellNine.addEventListener('click', takeCellNine)
+cellTwo.addEventListener('click', takeCellTwo)
+cellThree.addEventListener('click', takeCellThree)
+cellFour.addEventListener('click', takeCellFour)
+cellFive.addEventListener('click', takeCellFive)
+cellSix.addEventListener('click', takeCellSix)
+cellSeven.addEventListener('click', takeCellSeven)
+cellEight.addEventListener('click', takeCellEight)
+cellNine.addEventListener('click', takeCellNine)
 
 function takeCellOne() {
     cellOne.style.background = 'red'
-    playingArr = startArr.filter( num => num !== 1)
-    botsTurn(playingArr)
-
+    cellsRemain = startCells.filter( num => num !== 1 )
+    startCells = cellsRemain
+    botsTurn(startCells)
 }
 
 function takeCellTwo() {
-    cellTwo.style.background = 'red' : cellTwo.style.background = 'blue'
+    cellTwo.style.background = 'red'
+    cellsRemain = startCells.filter( num => num !== 2 )
+    startCells = cellsRemain
+    botsTurn(startCells)
 }
 
-// function takeCellThree() {
-//     count ++
-//     isEven(count) ? cellThree.style.background = 'red' : cellThree.style.background = 'blue'
-// }
+function takeCellThree() {
+    cellThree.style.background = 'red' 
+    cellsRemain = startCells.filter( num => num !== 3 )
+    startCells = cellsRemain
+    botsTurn(startCells)
+}
 
-// function takeCellFour() {
-//     count ++
-//     isEven(count) ? cellFour.style.background = 'red' : cellFour.style.background = 'blue'
-// }
+function takeCellFour() {
+    cellFour.style.background = 'red'
+    cellsRemain = startCells.filter( num => num !== 4 )
+    startCells = cellsRemain
+    botsTurn(startCells)
+}
 
-// function takeCellFive() {
-//     count ++ 
-//     isEven(count) ? cellFive.style.background = 'red' : cellFive.style.background = 'blue'
-// }
+function takeCellFive() {
+    cellFive.style.background = 'red' 
+    scellsRemain = startCells.filter( num => num !== 5 )
+    startCells = cellsRemain
+    botsTurn(startCells)
+}
 
-// function takeCellSix() {
-//     count ++
-//     isEven(count) ? cellSix.style.background = 'red' : cellSix.style.background = 'blue'
-// }
+function takeCellSix() {
+    cellSix.style.background = 'red'
+    cellsRemain = startCells.filter( num => num !== 6 )
+    startCells = cellsRemain
+    botsTurn(startCells)
+}
 
-// function takeCellSeven() {
-//     count ++
-//     isEven(count) ? cellSeven.style.background = 'red' : cellSeven.style.background = 'blue'
-// }
+function takeCellSeven() {
+    cellSeven.style.background = 'red'
+    cellsRemain = startCells.filter( num => num !== 7 )
+    startCells = cellsRemain
+    botsTurn(startCells)
+}
 
-// function takeCellEight() {
-//     count ++
-//     isEven(count) ? cellEight.style.background = 'red' : cellEight.style.background = 'blue'
-// }
+function takeCellEight() {
+    cellEight.style.background = 'red'
+    cellsRemain = startCells.filter( num => num !== 8 )
+    startCells = cellsRemain
+    botsTurn(startCells)
+}
 
-// function takeCellNine() {
-//     count ++
-//     isEven(count) ? cellNine.style.background = 'red' : cellNine.style.background = 'blue'
-// }
+function takeCellNine() {
+    cellNine.style.background = 'red'
+    cellsRemain = startCells.filter( num => num !== 9 )
+    startCells = cellsRemain
+    botsTurn(startCells)
+}
 
 
 // function isWinner() {
@@ -74,25 +91,33 @@ function takeCellTwo() {
 //Returns a random number from 1 - 9
 function botsTurn(arr) {
     let randomIdx = Math.floor( Math.random() * ( arr.length - 1) )
-
+    console.log(`index: ${randomIdx}, number: ${arr[randomIdx]}, array: ${arr}`)
     if( arr[randomIdx] === 1 ) {
-        arr = arr.filter( num => num !== 1)
+        startCells = arr.filter( num => num !== 1 )
         return cellOne.style.background = 'blue'
     } else if ( arr[randomIdx] === 2 ) {
+        startCells = arr.filter( num => num !== 2 )
         return cellTwo.style.background = 'blue'
     } else if ( arr[randomIdx] === 3 ) {
+        startCells = arr.filter( num => num !== 3 )
         return cellThree.style.background = 'blue'
     } else if ( arr[randomIdx] === 4 ) {
+        startCells = arr.filter( num => num !== 4 )
         return cellFour.style.background = 'blue'
     } else if ( arr[randomIdx] === 5 ) {
+        startCells = arr.filter( num => num !== 5 )
         return cellFive.style.background = 'blue'
     } else if ( arr[randomIdx] === 6 ) {
+        startCells = arr.filter( num => num !== 6 )
         return cellSix.style.background = 'blue'
     } else if ( arr[randomIdx] === 7 ) {
+        startCells = arr.filter( num => num !== 7 )
         return cellSeven.style.background = 'blue'
     } else if (arr[randomIdx] === 8 ) {
+        startCells = arr.filter( num => num !== 8 )
         return cellEight.style.background = 'blue'
     } else if ( arr[randomIdx] === 9 ) {
+        startCells = arr.filter( num => num !== 9 )
         return cellNine.style.background = 'blue'
     }
 }
