@@ -27,10 +27,9 @@ function takeCellOne() {
 
 }
 
-// function takeCellTwo() {
-//     count ++
-//     isEven(count) ? cellTwo.style.background = 'red' : cellTwo.style.background = 'blue'
-// }
+function takeCellTwo() {
+    cellTwo.style.background = 'red' : cellTwo.style.background = 'blue'
+}
 
 // function takeCellThree() {
 //     count ++
@@ -79,21 +78,21 @@ function botsTurn(arr) {
     if( arr[randomIdx] === 1 ) {
         arr = arr.filter( num => num !== 1)
         return cellOne.style.background = 'blue'
-    } else if ( arr[randomIdx] ) {
+    } else if ( arr[randomIdx] === 2 ) {
         return cellTwo.style.background = 'blue'
-    } else if ( random === 3 && isPlayable(cellThree) ) {
+    } else if ( arr[randomIdx] === 3 ) {
         return cellThree.style.background = 'blue'
-    } else if ( random === 4 && isPlayable(cellFour) ) {
+    } else if ( arr[randomIdx] === 4 ) {
         return cellFour.style.background = 'blue'
-    } else if ( random === 5 && isPlayable(cellFive) ) {
+    } else if ( arr[randomIdx] === 5 ) {
         return cellFive.style.background = 'blue'
-    } else if ( random === 6 && isPlayable(cellSix) ) {
+    } else if ( arr[randomIdx] === 6 ) {
         return cellSix.style.background = 'blue'
-    } else if ( random === 7 & isPlayable(cellSeven) ) {
+    } else if ( arr[randomIdx] === 7 ) {
         return cellSeven.style.background = 'blue'
-    } else if (random === 8 && isPlayable(cellEight) ) {
+    } else if (arr[randomIdx] === 8 ) {
         return cellEight.style.background = 'blue'
-    } else if (random === 9 && isPlayable(cellNine) ) {
+    } else if ( arr[randomIdx] === 9 ) {
         return cellNine.style.background = 'blue'
     }
 }
