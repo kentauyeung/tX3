@@ -25,6 +25,7 @@ function takeCellOne() {
     cellsRemain = startCells.filter( num => num !== 1 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 1`)
 }
 
 function takeCellTwo() {
@@ -32,6 +33,7 @@ function takeCellTwo() {
     cellsRemain = startCells.filter( num => num !== 2 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 2`)
 }
 
 function takeCellThree() {
@@ -39,6 +41,7 @@ function takeCellThree() {
     cellsRemain = startCells.filter( num => num !== 3 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 3`)
 }
 
 function takeCellFour() {
@@ -46,13 +49,15 @@ function takeCellFour() {
     cellsRemain = startCells.filter( num => num !== 4 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 4`)
 }
 
 function takeCellFive() {
     cellFive.style.background = 'red' 
-    scellsRemain = startCells.filter( num => num !== 5 )
+    cellsRemain = startCells.filter( num => num !== 5 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 5`)
 }
 
 function takeCellSix() {
@@ -60,6 +65,7 @@ function takeCellSix() {
     cellsRemain = startCells.filter( num => num !== 6 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 6`)
 }
 
 function takeCellSeven() {
@@ -67,6 +73,7 @@ function takeCellSeven() {
     cellsRemain = startCells.filter( num => num !== 7 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 7`)
 }
 
 function takeCellEight() {
@@ -74,6 +81,7 @@ function takeCellEight() {
     cellsRemain = startCells.filter( num => num !== 8 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 8`)
 }
 
 function takeCellNine() {
@@ -81,6 +89,7 @@ function takeCellNine() {
     cellsRemain = startCells.filter( num => num !== 9 )
     startCells = cellsRemain
     botsTurn(startCells)
+    console.log(`clicked Cell 9`)
 }
 
 
@@ -88,9 +97,9 @@ function takeCellNine() {
 
 // }
 
-//Returns a random number from 1 - 9
+// Bot's function
 function botsTurn(arr) {
-    let randomIdx = Math.floor( Math.random() * ( arr.length - 1) )
+    let randomIdx = Math.floor( Math.random() * ( arr.length - 1) + 1)
     console.log(`index: ${randomIdx}, number: ${arr[randomIdx]}, array: ${arr}`)
     if( arr[randomIdx] === 1 ) {
         startCells = arr.filter( num => num !== 1 )
