@@ -97,32 +97,40 @@ function takeCellNine() {
 // Bot's function
 function botsTurn(arr) {
     let randomIdx = Math.floor( Math.random() * ( arr.length - 1) + 1)
-    console.log(`index: ${randomIdx}, number: ${arr[randomIdx]}, array: ${arr}`)
     if( arr[randomIdx] === 1 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 1 )
         return cellOne.style.background = 'blue'
     } else if ( arr[randomIdx] === 2 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 2 )
         return cellTwo.style.background = 'blue'
     } else if ( arr[randomIdx] === 3 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 3 )
         return cellThree.style.background = 'blue'
     } else if ( arr[randomIdx] === 4 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 4 )
         return cellFour.style.background = 'blue'
     } else if ( arr[randomIdx] === 5 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 5 )
         return cellFive.style.background = 'blue'
     } else if ( arr[randomIdx] === 6 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 6 )
         return cellSix.style.background = 'blue'
     } else if ( arr[randomIdx] === 7 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 7 )
         return cellSeven.style.background = 'blue'
     } else if (arr[randomIdx] === 8 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 8 )
         return cellEight.style.background = 'blue'
     } else if ( arr[randomIdx] === 9 ) {
+        isWinner()
         startCells = arr.filter( num => num !== 9 )
         return cellNine.style.background = 'blue'
     }
@@ -137,10 +145,20 @@ function isWinner() {
         || cellThree.style.background === 'red' && cellSix.style.background === 'red' && cellNine.style.background === 'red'
         || cellOne.style.background === 'red' && cellFive.style.background === 'red' & cellNine.style.background === 'red' 
         || cellThree.style.background === 'red' && cellFive.style.background === 'red' && cellSeven.style.background === 'red') {
-        alert("WINNER!")
-        resetGame()
+            alert("WINNER!")
+            resetGame()
     }
-    if()
+    if(cellOne.style.background === 'blue' && cellTwo.style.background === 'blue' && cellThree.style.background === 'blue'
+        || cellFour.style.background === 'blue' && cellFive.style.background === 'blue' && cellSix.style.background === 'blue'
+        || cellSeven.style.background === 'blue' && cellEight.style.background === 'blue' && cellNine.style.background === 'blue'
+        || cellOne.style.background === 'blue' && cellFour.style.background === 'blue' && cellSeven.style.background === 'blue'
+        || cellTwo.style.background === 'blue' && cellFive.style.background === 'blue' && cellEight.style.background === 'blue'
+        || cellThree.style.background === 'blue' && cellSix.style.background === 'blue' && cellNine.style.background === 'blue'
+        || cellOne.style.background === 'blue' && cellFive.style.background === 'blue' & cellNine.style.background === 'blue' 
+        || cellThree.style.background === 'blue' && cellFive.style.background === 'blue' && cellSeven.style.background === 'blue') {
+            alert("Nice Try!")
+            resetGame()
+    }
 }
 
 function resetGame() {
