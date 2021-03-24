@@ -7,6 +7,7 @@ const cellSix = document.querySelector('.c6')
 const cellSeven = document.querySelector('.c7')
 const cellEight = document.querySelector('.c8')
 const cellNine = document.querySelector('.c9')
+const reset = document.querySelector('#reset')
 let startCells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let cellsRemain = []
 
@@ -19,6 +20,7 @@ cellSix.addEventListener('click', takeCellSix)
 cellSeven.addEventListener('click', takeCellSeven)
 cellEight.addEventListener('click', takeCellEight)
 cellNine.addEventListener('click', takeCellNine)
+reset.addEventListener('click', resetGame)
 
 function takeCellOne() {
     cellOne.style.background = 'red'
@@ -92,11 +94,6 @@ function takeCellNine() {
     console.log(`clicked Cell 9`)
 }
 
-
-// function isWinner() {
-
-// }
-
 // Bot's function
 function botsTurn(arr) {
     let randomIdx = Math.floor( Math.random() * ( arr.length - 1) + 1)
@@ -131,7 +128,19 @@ function botsTurn(arr) {
     }
 }
 
+function isWinner() {
 
-// function isPlayable(cell) {
-//     return cell.style.background = 'grey'
-// }
+}
+
+function resetGame() {
+    startCells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    cellOne.style.background = 'grey'
+    cellTwo.style.background = 'grey'
+    cellThree.style.background = 'grey'
+    cellFour.style.background = 'grey'
+    cellFive.style.background = 'grey'
+    cellSix.style.background = 'grey'
+    cellSeven.style.background = 'grey'
+    cellEight.style.background = 'grey'
+    cellNine.style.background = 'grey'
+}
