@@ -27,7 +27,7 @@ function takeCellOne() {
     cellsRemain = startCells.filter( num => num !== 1 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 1`)
+    isWinner()
 }
 
 function takeCellTwo() {
@@ -35,7 +35,7 @@ function takeCellTwo() {
     cellsRemain = startCells.filter( num => num !== 2 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 2`)
+    isWinner()
 }
 
 function takeCellThree() {
@@ -43,7 +43,7 @@ function takeCellThree() {
     cellsRemain = startCells.filter( num => num !== 3 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 3`)
+    isWinner()
 }
 
 function takeCellFour() {
@@ -51,7 +51,7 @@ function takeCellFour() {
     cellsRemain = startCells.filter( num => num !== 4 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 4`)
+    isWinner()
 }
 
 function takeCellFive() {
@@ -59,7 +59,7 @@ function takeCellFive() {
     cellsRemain = startCells.filter( num => num !== 5 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 5`)
+    isWinner()
 }
 
 function takeCellSix() {
@@ -67,7 +67,7 @@ function takeCellSix() {
     cellsRemain = startCells.filter( num => num !== 6 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 6`)
+    isWinner()
 }
 
 function takeCellSeven() {
@@ -75,7 +75,7 @@ function takeCellSeven() {
     cellsRemain = startCells.filter( num => num !== 7 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 7`)
+    isWinner()
 }
 
 function takeCellEight() {
@@ -83,7 +83,7 @@ function takeCellEight() {
     cellsRemain = startCells.filter( num => num !== 8 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 8`)
+    isWinner()
 }
 
 function takeCellNine() {
@@ -91,7 +91,7 @@ function takeCellNine() {
     cellsRemain = startCells.filter( num => num !== 9 )
     startCells = cellsRemain
     botsTurn(startCells)
-    console.log(`clicked Cell 9`)
+    isWinner()
 }
 
 // Bot's function
@@ -129,7 +129,18 @@ function botsTurn(arr) {
 }
 
 function isWinner() {
-
+    if(cellOne.style.background === 'red' && cellTwo.style.background === 'red' && cellThree.style.background === 'red'
+        || cellFour.style.background === 'red' && cellFive.style.background === 'red' && cellSix.style.background === 'red'
+        || cellSeven.style.background === 'red' && cellEight.style.background === 'red' && cellNine.style.background === 'red'
+        || cellOne.style.background === 'red' && cellFour.style.background === 'red' && cellSeven.style.background === 'red'
+        || cellTwo.style.background === 'red' && cellFive.style.background === 'red' && cellEight.style.background === 'red'
+        || cellThree.style.background === 'red' && cellSix.style.background === 'red' && cellNine.style.background === 'red'
+        || cellOne.style.background === 'red' && cellFive.style.background === 'red' & cellNine.style.background === 'red' 
+        || cellThree.style.background === 'red' && cellFive.style.background === 'red' && cellSeven.style.background === 'red') {
+        alert("WINNER!")
+        resetGame()
+    }
+    if()
 }
 
 function resetGame() {
