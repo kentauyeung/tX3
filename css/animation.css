@@ -1,13 +1,14 @@
 .game-display {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    gap: .5em;
     width: 300px;
 }
 .cell-display {
     background: seashell;
     width: 100px;
     height: 100px;
+    border-radius: 1em;
 }
 
 

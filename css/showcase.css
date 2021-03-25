@@ -1,0 +1,117 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: gainsboro;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    margin: auto;
+}
+
+/* Nav  */
+nav {
+    background: grey;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px 2em;
+    height: 4em;
+}
+
+li {
+    list-style-type: none;;
+    margin-right: 2em;
+}
+
+.fab {
+    color: white;
+}
+
+/* Main  */
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 4em 5em;
+    column-gap: 10em;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0px;
+}
+
+.play-button {
+    background: tomato;
+    width: 6em;
+    height: 3em;
+    border-radius: .5em;
+    margin: 0px;
+    text-align: center;
+    font-size: large;
+}
+
+a:visited {
+    color: white;
+}
+
+/* How it works  */
+.how-it-works {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10em;
+    justify-content: center;
+    background: white;
+    padding: 4em 5em;
+}
+
+h2 {
+    margin-top: 0px;
+}
+.how-it-works-example {
+    min-width: 300px;
+    text-align: center;
+}
+
+.cell-display-ex {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    margin: auto;
+    border-radius: 1em;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.toggleRed {
+    background: tomato;
+}
+
+.cell-display-ex:hover {
+    transform: scale(1.1);
+}
+
+/* The Team  */
+.team {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10em;
+    padding: 4em 5em;
+}
+
+.headshot-container {
+    min-width: 20em;
+    max-width: 20em;
+    height: 15em;
+    overflow:hidden;
+}
+img {
+    width: 20em;
+    position: relative;
+    top: -3em;
+}

@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"/>
+    <title>tX3</title>
 </head>
 <body>
-    <div class="title">
-        <h1>tX3</h1>
-        <button class="docs">Docs</button>
-        <button class="github-button">Github</button>
-        <button class="reset">Reset</button>
-    </div>
-    <div id="board">
-        <div class="cell c1"></div>
-        <div class="cell c2"></div>
-        <div class="cell c3"></div>
-        <div class="cell c4"></div>
-        <div class="cell c5"></div>
-        <div class="cell c6"></div>
-        <div class="cell c7"></div>
-        <div class="cell c8"></div>
-        <div class="cell c9"></div>
-    </div>
-<script type="text/javascript" src="js/index.js"></script>
+    <nav>
+        <ul>
+            <li><a href="#.html"><i class="fab fa-github fa-2x"></i></a></li>
+            <li><a href="#.html"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="text-main">
+            <div>
+                <h1>tX3</h1>
+                <h3>A childhood favorite!</h3>
+                <p>Built with Vanilla JS, this simple app will entertain you with it's single player mode. Don't know how to play? Check out the demo animation on the right!</p>
+            </div>
+            <div>
+                <a href="ttt.html"><div class="play-button">Play</div></a>
+            </div>
+        </div>
+        <div class="game-display">
+            <div class="cell-display c1-display"></div>
+            <div class="cell-display c2-display"></div>
+            <div class="cell-display c3-display"></div>
+            <div class="cell-display c4-display"></div>
+            <div class="cell-display c5-display"></div>
+            <div class="cell-display c6-display"></div>
+            <div class="cell-display c7-display"></div>
+            <div class="cell-display c8-display"></div>
+            <div class="cell-display c9-display"></div>
+        </div>
+        
+    </main>
+    <section class="how-it-works">
+        <div>
+            <h2>How It Works</h2>
+            <p>With every action, there is a reation. It's always your turn to go first. After you choose a box, a robot will do its calculation and makes their move. If you ever run into any problems, there's a <span>reset</span> button that tells the robot, "Hey! are we playing or what?"</p>
+        </div>
+        <div class="how-it-works-example">
+            <div class="cell-display-ex"></div>
+            <p>Click me!</p>
+        </div>    
+    </section>
+    <section class="team">
+        <div>
+            <h2>About the Creator</h2>
+            <p>Hey! I'm Kent Auyeung, a developer from San Francisco, CA. This was my first hackathon, and thanks to <a href="mintbean.io">Mintbean</a> and their awesome community, I was able to make tX3 possible.  </p>
+        </div>
+        <div class="headshot-container">
+            <img src="images/kent-headshot-sm.jpeg" alt="It's me!">
+        </div>
+    </section>
+    </section>
+    <script src="js/showcase.js"></script>
 </body>
 </html>
