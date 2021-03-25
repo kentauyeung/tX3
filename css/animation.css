@@ -1,0 +1,367 @@
+.game-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    width: 300px;
+}
+.cell-display {
+    background: seashell;
+    width: 100px;
+    height: 100px;
+}
+
+
+.c1-display {
+    animation: change-color1 10s infinite;
+}
+
+.c4-display {
+    animation: change-color2 10s infinite;
+}
+
+.c5-display {
+    animation: change-color3 10s infinite;
+}
+
+.c9-display {
+    animation: change-color4 10s infinite;
+}
+
+.c2-display {
+    animation: change-color5 10s infinite;
+}
+
+.c3-display {
+    animation: change-color6 10s infinite;
+}
+
+.c8-display {
+    animation: change-color7 10s infinite;
+}
+
+@keyframes change-color1 {
+    0% {
+        background: seashell
+    }
+    10% {
+        background: tomato;
+    }
+    20% {
+        background: tomato;
+    }
+    30% {
+        background: tomato;
+    }
+    40% {
+        background: tomato;
+    }
+    50% {
+        background: tomato;
+    }
+    60% {
+        background: tomato;
+    }
+    70% {
+        background: tomato;
+    }
+    80% {
+        background: seashell;
+    }
+    90% {
+        background: seashell;
+    }
+    100%{
+        background: seashell;
+    }
+}
+
+@keyframes change-color2 {
+    0% {
+        background: seashell
+    }
+    10% {
+        background: seashell;
+    }
+    20% {
+        background: skyblue;
+    }
+    30% {
+        background: skyblue;
+    }
+    40% {
+        background: skyblue;
+    }
+    50% {
+        background: skyblue;
+    }
+    60% {
+        background: skyblue;
+    }
+    70% {
+        background: skyblue;
+    }
+    80% {
+        background: seashell;
+    }
+    90% {
+        background: seashell;
+    }
+    100%{
+        background: seashell;
+    }
+}
+
+@keyframes change-color3 {
+    0% {
+        background: seashell
+    }
+    10% {
+        background: seashell;
+    }
+    20% {
+        background: seashell;
+    }
+    30% {
+        background: tomato;
+    }
+    40% {
+        background: tomato;
+    }
+    50% {
+        background: tomato;
+    }
+    60% {
+        background: tomato;
+    }
+    70% {
+        background: tomato;
+    }
+    80% {
+        background: tomato;
+    }
+    90% {
+        background: tomato;
+    }
+    100%{
+        background: tomato;
+    }
+}
+
+@keyframes change-color4 {
+    0% {
+        background: seashell
+    }
+    10% {
+        background: seashell;
+    }
+    20% {
+        background: seashell;
+    }
+    30% {
+        background: seashell;
+    }
+    40% {
+        background: skyblue;
+    }
+    50% {
+        background: skyblue;
+    }
+    60% {
+        background: skyblue;
+    }
+    70% {
+        background: skyblue;
+    }
+    80% {
+        background: seashell;
+    }
+    90% {
+        background: seashell;
+    }
+    100%{
+        background: seashell;
+    }
+}
+
+@keyframes change-color5 {
+    0% {
+        background: seashell
+    }
+    10% {
+        background: seashell;
+    }
+    20% {
+        background: seashell;
+    }
+    30% {
+        background: seashell;
+    }
+    40% {
+        background: seashell;
+    }
+    50% {
+        background: tomato;
+    }
+    60% {
+        background: tomato;
+    }
+    70% {
+        background: tomato;
+    }
+    80% {
+        background: tomato;
+    }
+    90% {
+        background: tomato;
+    }
+    100%{
+        background: tomato;
+    }
+}
+
+@keyframes change-color6 {
+    0% {
+        background: seashell
+    }
+    10% {
+        background: seashell;
+    }
+    20% {
+        background: seashell;
+    }
+    30% {
+        background: seashell;
+    }
+    40% {
+        background: seashell;
+    }
+    50% {
+        background: seashell;
+    }
+    60% {
+        background: skyblue;
+    }
+    70% {
+        background: skyblue;
+    }
+    80% {
+        background: seashell;
+    }
+    90% {
+        background: seashell;
+    }
+    100%{
+        background: seashell;
+    }
+}
+
+@keyframes change-color7 {
+    0% {
+        background: seashell
+    }
+    10% {
+        background: seashell;
+    }
+    20% {
+        background: seashell;
+    }
+    30% {
+        background: seashell;
+    }
+    40% {
+        background: seashell;
+    }
+    50% {
+        background: seashell;
+    }
+    60% {
+        background: seashell;
+    }
+    70% {
+        background: tomato;
+    }
+    80% {
+        background: tomato;
+    }
+    90% {
+        background: tomato;
+    }
+    100%{
+        background: tomato;
+    }
+}
+
+/* .c1-display, .c6-display, .c7-display {
+    animation: change-color1 4s infinite;
+}
+
+.c2-display, .c4-display {
+    animation: change-color2 4s infinite;
+}
+
+.c3-display, .c8-display {
+    animation: change-color3 4s infinite;
+}
+.c5-display, .c9-display {
+    animation: change-color4 4s infinite;
+}
+
+@keyframes change-color1{
+    0% {
+        background: seashell;
+    }
+    25% {
+        background:tomato;
+    }
+    75%{
+        background: skyblue;
+    }
+    100% {
+        background: seashell;
+    }
+}
+
+@keyframes change-color2{
+    0% {
+        background: tomato;
+    }
+    50% {
+        background: skyblue;
+    }
+    75%{
+        background: seashell;
+    }
+    100% {
+        background: tomato;
+    }
+}
+
+@keyframes change-color3{
+    0% {
+        background: skyblue;
+    }
+    50% {
+        background: tomato;
+    }
+    75%{
+        background: seashell;
+    }
+    100% {
+        background: skyblue;
+    }
+}
+
+@keyframes change-color4{
+    0% {
+        background: skyblue;
+    }
+    50% {
+        background: seashell;
+    }
+    75%{
+        background: tomato;
+    }
+    100% {
+        background: skyblue;
+    }
+} */
