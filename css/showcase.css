@@ -49,8 +49,9 @@ h1 {
 .play-button {
     background: tomato;
     width: 6em;
-    height: 3em;
+    height: 2em;
     border-radius: .5em;
+    padding-top: .5em;
     margin: 0px;
     text-align: center;
     font-size: large;
