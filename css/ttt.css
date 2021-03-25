@@ -47,6 +47,7 @@ h1 {
 button {
     font-family: inherit;
     width: 8em;
+    height: 5em;
     background: dimgray;
     color: white;
     border: none;
